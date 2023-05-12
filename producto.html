@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store v.1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="nave">
+        <a class="nave__enlace" href="index.html">Tienda</a>
+        <a class="nave__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+    
+    <main class="contenedor">
+        <h1>ReactJS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="img camisa 1">
+
+            <div class="camisa__contenido">
+                <p>
+                Ut sed dictum massa. Nulla tempor mauris a lacinia sagittis. 
+                Nulla dignissim metus a urna cursus auctor. Ut nisi eros, 
+                finibus in erat at, viverra facilisis sapien.
+                Sed volutpat leo sit amet lacus tempor, in dictum dui egestas.</p>
+                
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Talla --</option> <!-- 'disabled' Inhabilita esta opcion, 'selected' Selecciona por default la opcion-->
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" step="7" max="99">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2023.</p>
+    </footer>
+
+</body>
+</html>
